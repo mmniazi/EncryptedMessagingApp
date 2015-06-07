@@ -2,6 +2,7 @@ package com.messagingapp;
 
 import android.content.Context;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.telephony.SmsManager;
@@ -162,6 +163,10 @@ public class MainActivity extends ActionBarActivity {
             T t = getItem(position);
             lineOneView.setText(lineOneText(t));
             lineTwoView.setText(lineTwoText(t));
+
+            // TODO: Change color
+            lineOneView.setTextColor(Color.GREEN);
+            lineTwoView.setTextColor(Color.GREEN);
 
             return listItemView;
         }
